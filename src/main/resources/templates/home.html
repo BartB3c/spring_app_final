@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Strona główna</title>
+    <link  th:href="@{/css/home.css}" rel="stylesheet">
+
+</head>
+<body>
+<div class="main-page">
+    <h1>Witaj na stronie głównej!</h1>
+    <p>Jesteś zalogowany!</p>
+
+    <form th:action="@{/logout}" method="post">
+        <button type="submit">Wyloguj się</button>
+    </form>
+
+    <div>
+        <a th:href="@{/available_products}" class="button-link">Wszystkie produkty</a>
+        <a th:href="@{/cart}" class="button-link">Koszyk</a>
+        <a th:href="@{/my_orders}" class="button-link">Moje zamówienia</a>
+    </div>
+</div>
+</body>
+</html>

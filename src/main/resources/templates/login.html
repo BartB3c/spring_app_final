@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Logowanie</title>
+    <link th:href="@{/css/login.css}" rel="stylesheet">
+</head>
+<script>
+    window.onload = function() {
+        var loginPanel = document.querySelector('.login');
+        loginPanel.classList.add('loaded');
+    };
+</script>
+<body>
+<div class="login-panel">
+    <h1>Logowanie</h1>
+    <div th:if="${message}" th:text="${message}" class="message"></div>
+    <form th:action="@{/login}" method="post">
+        <div>
+            <label for="username">Nazwa użytkownika:</label>
+            <input type="text" id="username" name="username" required />
+        </div>
+        <div>
+            <label for="password">Hasło:</label>
+            <input type="password" id="password" name="password" required />
+        </div>
+        <div>
+            <button type="submit">Zaloguj się</button>
+        </div>
+    </form>
+    <a th:href="@{/product-list}" class="button-link">Wszystkie produkty</a>
+    <a th:href="@{/register}" class="button-link">Rejestracja</a>
+</div>
+</body>
+</html>

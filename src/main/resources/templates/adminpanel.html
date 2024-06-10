@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Strona główna</title>
+    <link th:href="@{/css/adminpanel.css}" rel="stylesheet">
+</head>
+<body>
+<div class="admin-panel"> <div class="admin-panel">
+    <h1>Admin panel!</h1>
+    <form th:action="@{/logout}" method="post">
+        <button type="submit">Wyloguj się</button>
+    </form>
+    <div>
+        <a th:href="@{/main}" class="button-link">Wszystkie produkty</a>
+        <a th:href="@{/product/add}" class="button-link">Dodaj produkt</a>
+        <a th:href="@{/all_orders}" class="button-link">Zamówienia</a>
+    </div>
+</div>
+</body>
+</html>

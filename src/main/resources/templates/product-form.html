@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link th:href="@{/css/product-form.css}" rel="stylesheet">
+</head>
+<body>
+<div class="add-product-panel">
+    <h1>Dodaj Produkt</h1>
+    <form method="post">
+        <input type="text" placeholder="Nazwa" class="input-field" th:field="*{product.name}" id="name">
+        <input type="text" placeholder="Marka" class="input-field" th:field="*{product.brand}" id="brand">
+        <input type="text" placeholder="Cena" class="input-field" th:field="*{product.price}" id="price">
+        <input type="text" placeholder="Ilość" class="input-field" th:field="*{product.quantity}" id="quantity">
+        <input type="submit" value="Dodaj">
+    </form>
+</div>
+</body>
+</html>

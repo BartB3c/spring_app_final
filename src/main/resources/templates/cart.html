@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Koszyk</title>
+    <link  th:href="@{/css/cart.css}" rel="stylesheet">
+</head>
+<body>
+<div class="cart-container">
+    <h1>Koszyk</h1>
+    <div th:if="${cart.items.isEmpty()}">
+        <p>Koszyk pusty.</p>
+    </div>
+    <div th:unless="${cart.items.isEmpty()}">
+        <table>
+            <thead>
+            <tr>
+                <th>Nazwa</th>
+                <th>Marka</th>
+                <th>Cena</th>
+                <th>Ilość</th>
+                <th>Usuń</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="item : ${cart.items}">
+                <td th:text="${item.product.name}"></td>
+                <td th:text="${item.product.brand}"></td>
+                <td th:text="${item.product.price}"></td>
+                <td th:text="${item.quantity}"></td>
+                <td>
+                    <form th:action="@{/cart/remove/{productId}(productId=${item.product.id})}" method="get">
+                        <button type="submit">usuń</button>
+                    </form>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <form th:action="@{/order/submit}" method="post">
+            <button type="submit" class="button-link">Zamów</button>
+        </form>
+        <div th:if="${errorMessage}" class="error">
+            <p th:text="${errorMessage}"></p>
+        </div>
+    </div>
+</div>
+</body>

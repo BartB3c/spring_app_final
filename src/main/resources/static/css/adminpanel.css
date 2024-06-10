@@ -1,0 +1,54 @@
+/* Ogólne style */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Panel administratora */
+.admin-panel {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Linki */
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50; /* Zielony */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button-link:hover {
+    background-color: #45a049; /* Ciemniejszy zielony */
+}
+
+/* Formularz wylogowania */
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #f44336; /* Czerwony */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
