@@ -4,7 +4,6 @@
     align-items: center;
     margin: 20px;
 }
-
 .order-item {
     width: 350px;
     margin: 10px 0;
@@ -13,11 +12,9 @@
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 .order-item div {
     margin-bottom: 5px;
 }
-
 .order-item:not(:last-child) {
     margin-bottom: 20px;
 }

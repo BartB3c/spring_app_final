@@ -5,21 +5,18 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-
 h1 {
     text-align: center;
     padding: 20px;
     background-color: #333;
     color: white;
 }
-
 .order-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
-
 .order-item {
     width: 300px;
     padding: 20px;
@@ -27,23 +24,19 @@ h1 {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 .order-item div {
     margin-bottom: 10px;
 }
-
 .order-item form {
     display: flex;
     align-items: center;
 }
-
 .order-item select {
     padding: 8px;
     margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 .order-item input[type="submit"] {
     padding: 8px 15px;
     background-color: #4CAF50;

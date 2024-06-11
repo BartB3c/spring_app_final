@@ -3,15 +3,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .product-card {
     flex: 0 0 calc(33.33% - 10px);
     margin: 5px;
     box-sizing: border-box;
     padding: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Dodano cień */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-
 .add-to-cart-link {
     display: block;
     text-align: center;
@@ -24,7 +22,6 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
 .add-to-cart-link:hover {
     background-color: #0069d9;
 }

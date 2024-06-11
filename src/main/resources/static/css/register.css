@@ -5,7 +5,6 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-
 h1 {
     text-align: center;
     padding: 20px;
@@ -13,7 +12,6 @@ h1 {
     color: white;
     margin-bottom: 20px;
 }
-
 .register-panel {
     max-width: 400px;
     margin: 50px auto;
@@ -21,16 +19,13 @@ h1 {
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 form {
     text-align: center;
 }
-
 label {
     display: block;
     margin-bottom: 10px;
 }
-
 input[type="text"],
 input[type="password"] {
     width: 90%;
@@ -39,7 +34,6 @@ input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 button[type="submit"],
 .button-link {
     display: inline-block;
@@ -52,12 +46,10 @@ button[type="submit"],
     margin-top: 20px;
     text-decoration: none;
 }
-
 button[type="submit"]:hover,
 .button-link:hover {
     background-color: #45a049;
 }
-
 .message {
     text-align: center;
     margin-bottom: 20px;
