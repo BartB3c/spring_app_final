@@ -15,7 +15,6 @@ public class OrderDAO {
     private final String GET_ALL_JPQL = "FROM com.example.spring_app.model.Order";
 //    private final String GET_BY_ID_JPQL = "SELECT o from com.example.spring_app.model.Order o WHERE o.id = :id";
 
-
     public List<Order> getAll() {
         TypedQuery<Order> query = entityManager.createQuery(GET_ALL_JPQL, Order.class);
         return query.getResultList();

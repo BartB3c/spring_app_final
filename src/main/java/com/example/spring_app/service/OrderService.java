@@ -18,11 +18,8 @@ public class OrderService {
     CartService cartService;
     @Autowired
     UserService userService;
-
     @Autowired
     OrderDAO orderDAO;
-
-
     @Transactional
     public Order submitOrder(){
         User user = userService.getCurrentUser();
@@ -33,10 +30,13 @@ public class OrderService {
         order.setStatus(OrderStatus.SUBMITTED);
         order.setUser(user);
         for (CartItem cartItem : cart.getItems()){
+            Product p = cartItem.getProduct();
+            int currentQuantity = p.getQuantity();
             OrderItem orderItem = new OrderItem();
             orderItem.setProduct(cartItem.getProduct());
             orderItem.setQuantity(cartItem.getQuantity());
             order.getItems().add(orderItem);
+            p.setQuantity(currentQuantity - cartItem.getQuantity());
         }
         cart.getItems().clear();
         cartService.saveCart(cart);
@@ -53,6 +53,7 @@ public class OrderService {
     public void saveOrder(Order order) {
         orderRepository.save(order);
     }
+
 
     public List<Order> getAll(){
         return this.orderDAO.getAll();

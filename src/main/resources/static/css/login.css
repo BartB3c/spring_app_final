@@ -11,13 +11,13 @@ h1 {
     padding: 20px;
     background-color: #333;
     color: white;
-    margin-bottom: 20px; /* Dodano margines */
+    margin-bottom: 20px;
 }
 
 .login-panel {
     max-width: 400px;
     margin: 50px auto;
-    padding: 30px; /* Zwiększono padding */
+    padding: 30px;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -28,14 +28,14 @@ form {
 
 label {
     display: block;
-    margin-bottom: 10px; /* Zwiększono margines */
+    margin-bottom: 10px;
 }
 
 input[type="text"],
 input[type="password"] {
     width: 90%;
-    padding: 15px; /* Zwiększono padding */
-    margin-bottom: 20px; /* Zwiększono margines */
+    padding: 15px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -43,13 +43,14 @@ input[type="password"] {
 button[type="submit"],
 .button-link {
     display: inline-block;
-    padding: 15px 25px; /* Zwiększono padding */
+    padding: 15px 25px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px; /* Dodano margines */
+    margin-top: 20px;
+    text-decoration: none;
 }
 
 button[type="submit"]:hover,
@@ -59,7 +60,7 @@ button[type="submit"]:hover,
 
 .message {
     text-align: center;
-    margin-bottom: 20px; /* Zwiększono margines */
-    padding: 15px; /* Zwiększono padding */
+    margin-bottom: 20px;
+    padding: 15px;
     border-radius: 5px;
 }

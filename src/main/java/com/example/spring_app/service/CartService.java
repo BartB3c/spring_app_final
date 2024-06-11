@@ -29,7 +29,7 @@ public class CartService {
     public Cart addToCart(int productId, int quantity){
         Cart cart = getCart();
         Product product = productRepository.getById(productId).orElseThrow(()
-                -> new RuntimeException("Book not found"));
+                -> new RuntimeException("Product not found"));
         cart.addItem(product, quantity);
         return saveCart(cart);
     }
@@ -38,7 +38,7 @@ public class CartService {
     public Cart removeFromCart(int bookId){
         Cart cart = this.getCart();
         Product product = productRepository.getById(bookId).orElseThrow(()
-                -> new RuntimeException("Book not found"));
+                -> new RuntimeException("Product not found"));
         cart.removeItem(product);
         return saveCart(cart);
     }
@@ -47,6 +47,4 @@ public class CartService {
     public Cart saveCart(Cart cart){
         return cartRepository.save(cart);
     }
-
-
 }

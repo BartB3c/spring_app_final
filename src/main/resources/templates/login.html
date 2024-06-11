@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Logowanie</title>
-    <link th:href="@{/css/login.css}" rel="stylesheet">
+    <title>Login</title>
+    <base href="/">
+    <link th:href="@{/css/login.css}" rel="stylesheet"/>
 </head>
-<script>
-    window.onload = function() {
-        var loginPanel = document.querySelector('.login');
-        loginPanel.classList.add('loaded');
-    };
-</script>
 <body>
 <div class="login-panel">
     <h1>Logowanie</h1>

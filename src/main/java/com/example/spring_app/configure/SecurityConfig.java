@@ -19,16 +19,17 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(auth -> auth
 
-                        .requestMatchers("/login", "/register").permitAll()
-                        .requestMatchers("/h2-console/**").permitAll()
-                        .requestMatchers("/admin/**").hasAuthority("ADMIN")
-                        .requestMatchers("/product/**").permitAll()
-                        .requestMatchers("/product-list/**").permitAll()
-//                                .requestMatchers("/book/add/**", "/book/update/**", "/delete").hasAuthority("ADMIN")
-//                        .requestMatchers("/available_books").hasAnyAuthority("USER","ADMIN")
+                                .requestMatchers("/css/**").permitAll()
+                                .requestMatchers("/login", "/register").permitAll()
+                                .requestMatchers("/h2-console/**").permitAll()
+                                .requestMatchers("/product/**").permitAll()
+                                .requestMatchers("/product-list/**").permitAll()
+//                                .requestMatchers("/product/add/**", "/product/update/**", "/delete").hasAuthority("ADMIN")
+//                        .requestMatchers("/available_products").hasAnyAuthority("USER","ADMIN")
 //                                .requestMatchers("/cart/**").hasAnyAuthority("USER","ADMIN")
                                 .requestMatchers("/product-list").permitAll()
-                        .anyRequest().authenticated()
+                                .requestMatchers("/admin/**").hasAuthority("ADMIN")
+                                .anyRequest().authenticated()
 
 //                ).csrf(csrf->csrf.ignoringRequestMatchers("/h2-console/**"))
                 ).csrf(AbstractHttpConfigurer::disable)

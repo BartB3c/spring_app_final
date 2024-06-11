@@ -13,16 +13,15 @@ h1 {
     color: white;
 }
 
-/* Lista zamówień */
 .order-list {
     display: flex;
-    flex-wrap: wrap; /* Układ elementów obok siebie, z zawijaniem wierszy */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Odstęp między elementami */
+    gap: 20px;
 }
 
 .order-item {
-    width: 300px; /* Szerokość elementu zamówienia */
+    width: 300px;
     padding: 20px;
     background-color: white;
     border-radius: 5px;
@@ -33,10 +32,9 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Formularz aktualizacji statusu */
 .order-item form {
     display: flex;
-    align-items: center; /* Wyrównanie elementów w pionie */
+    align-items: center;
 }
 
 .order-item select {
@@ -48,12 +46,12 @@ h1 {
 
 .order-item input[type="submit"] {
     padding: 8px 15px;
-    background-color: #4CAF50; /* Zielony */
+    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 .order-item input[type="submit"]:hover {
-    background-color: #45a049; /* Ciemniejszy zielony */
+    background-color: #45a049;
 }

@@ -11,20 +11,15 @@ import java.util.*;
 @Entity
 @Table(name = "orders")
 public class Order {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private Date date;
-
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
-
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
-
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name = "orders_items",

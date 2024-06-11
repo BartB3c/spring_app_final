@@ -54,7 +54,4 @@ public class HomeController {
         model.addAttribute("orders", this.userService.getCurrentUser().getOrders());
         return "my_orders";
     }
-
-
-
 }

@@ -2,7 +2,9 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Rejestracja</title>
-    <link rel="stylesheet" th:href="@{/css/register.css}">  </head>
+    <base href="/">
+    <link rel="stylesheet" th:href="@{/css/register.css}">
+</head>
 <body>
 <div class="register-panel">  <h1>Rejestracja</h1>
     <form th:action="@{/register}" method="post" th:object="${user}">

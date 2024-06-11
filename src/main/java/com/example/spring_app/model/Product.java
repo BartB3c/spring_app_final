@@ -22,7 +22,6 @@ public class Product {
     private String brand;
     private BigDecimal price;
     private int quantity;
-
     public Product(int id){
         this.id = id;
     }

@@ -32,7 +32,7 @@
 }
 
 .product-item a {
-    background-color: #4CAF50; /* Zielony */
+    background-color: #4CAF50;
 }
 
 .product-item a:hover {
@@ -40,5 +40,5 @@
 }
 
 .product-item input[type="submit"] {
-    background-color: #f44336; /* Czerwony */
+    background-color: #f44336;
 }

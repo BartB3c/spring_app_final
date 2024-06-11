@@ -12,18 +12,29 @@
 }
 
 .main-page form {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }
 
-.main-page button[type="submit"] {
+.main-page button[type="submit"], .button-link {
     padding: 10px 20px;
-    background-color: #f44336; /* Czerwony */
-    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.main-page button[type="submit"] {
+    background-color: #f44336;
+    color: white;
 }
 
 .main-page button[type="submit"]:hover {
-    background-color: #d32f2f; /* Ciemniejszy czerwony */
+    background-color: #d32f2f;
+}
+
+.button-link {
+    background-color: #45a049;
+    color: white;
 }

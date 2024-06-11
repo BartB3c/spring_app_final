@@ -1,7 +1,9 @@
 package com.example.spring_app.controller;
 
+import com.example.spring_app.model.Cart;
 import com.example.spring_app.model.Order;
 import com.example.spring_app.model.OrderStatus;
+import com.example.spring_app.service.CartService;
 import com.example.spring_app.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,8 +18,8 @@ public class OrderController {
 
     @PostMapping("/submit")
     public String submitOrder(){
-            Order order = orderService.submitOrder();
-            return "redirect:/order/" + order.getId();
+        Order order = orderService.submitOrder();
+        return "redirect:/order/" + order.getId();
     }
 
     @GetMapping("/{orderId}")
@@ -32,7 +34,7 @@ public class OrderController {
         Order order = orderService.getOrder(orderId);
         order.setStatus(orderStatus);
         orderService.saveOrder(order);
-        return "redirect:/order/" + orderId; // Przeładuj stronę zamówienia po aktualizacji
+        return "redirect:/order/" + orderId;
     }
 
 

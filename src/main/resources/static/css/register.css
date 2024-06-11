@@ -1,47 +1,66 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-bottom: 20px;
+}
 
 .register-panel {
     max-width: 400px;
     margin: 50px auto;
-    padding: 20px;
+    padding: 30px;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.register-panel form {
+form {
     text-align: center;
 }
 
-.register-panel label {
+label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-.register-panel input[type="text"],
-.register-panel input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.register-panel button[type="submit"],
-.register-panel .button-link {
+button[type="submit"],
+.button-link {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 25px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px;
     text-decoration: none;
 }
 
-.register-panel button[type="submit"]:hover,
-.register-panel .button-link:hover {
+button[type="submit"]:hover,
+.button-link:hover {
     background-color: #45a049;
 }
 
-.register-panel a.button-link {
-    margin-right: 10px;
+.message {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
 }

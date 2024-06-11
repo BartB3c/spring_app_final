@@ -1,12 +1,12 @@
 .order-list {
     display: flex;
-    flex-direction: column; /* Zamówienia jedno pod drugim */
+    flex-direction: column;
     align-items: center;
     margin: 20px;
 }
 
 .order-item {
-    width: 350px; /* Szerokość dostosowana do informacji o zamówieniach */
+    width: 350px;
     margin: 10px 0;
     padding: 20px;
     background-color: white;
